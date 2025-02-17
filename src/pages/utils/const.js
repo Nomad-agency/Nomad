@@ -1,0 +1,92 @@
+export const casesData = [
+  {
+    background: 'bg-bg-1',
+    title: 'Лига уличного футбола',
+    link: '/case15',
+    cards: ['брендинг', 'ux/ui дизайн', 'events', 'партнерство', 'smm \\ pr', 'production'],
+  },
+  {
+    background: 'bg-bg-2',
+    title: 'запуск nrav',
+    link: '/case3',
+    cards: ['events'],
+  },
+  {
+    background: 'bg-bg-3',
+    title: 'pop-up самолет',
+    link: '/case7',
+    cards: ['events', 'архитектура'],
+  },
+  {
+    background: 'bg-bg-4',
+    title: 'lunda padel',
+    link: '/case10',
+    cards: ['брендинг', '3d', 'партнерство'],
+  },
+  {
+    background: 'bg-bg-5',
+    title: 'betboom party',
+    link: '/case9',
+    cards: ['events'],
+  },
+  {
+    background: 'bg-bg-6',
+    title: 'маскот «Альфа-капитал»',
+    link: '/case1',
+    cards: ['3d', 'стратегия', 'digital'],
+  },
+  {
+    background: 'bg-bg-7',
+    title: 'radi mira i lubvi',
+    link: '/case2',
+    cards: ['брендинг', '3d'],
+  },
+  {
+    background: 'bg-bg-8',
+    title: 'pop-up skin by bodium',
+    link: '/case5',
+    cards: ['events', 'архитектура'],
+  },
+  {
+    background: 'bg-bg-9',
+    title: '«Исполнение мечты»',
+    link: '/case11',
+    cards: ['Digital', 'ux/ui дизайн'],
+  },
+  {
+    background: 'bg-bg-10',
+    title: 'форма ФК « Спартак »',
+    link: '/case13',
+    cards: ['мерч', '3d'],
+  },
+  {
+    background: 'bg-bg-11',
+    title: 'игра « Альфа-Капитал »',
+    link: '/case14',
+    cards: ['Digital', 'ux/ui дизайн', '3d'],
+  },
+  {
+    background: 'bg-bg-12',
+    title: 'мерч « альфа-капитал »',
+    link: '/case8',
+    cards: ['мерч'],
+  },
+  {
+    background: 'bg-bg-13',
+    title: 'запуск bodium',
+    link: '/case6',
+    cards: ['events'],
+  },
+  {
+    background: 'bg-bg-14',
+    title: '« жилизный базар » ',
+    link: '/case4',
+    cards: ['events', 'брендинг', 'smm \\ pr'],
+  },
+  {
+    background: 'bg-bg-15',
+    title: 'create your reality',
+    link: '/case12',
+    cards: ['smm \\ pr', 'production'],
+  },
+];

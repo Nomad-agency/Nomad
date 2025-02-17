@@ -1,0 +1,28 @@
+/* чтобы иконка крутили на 90 градусов */
+.MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(90deg) !important;
+}
+
+.MuiPaper-root::before {
+  background-color: transparent !important;
+}
+
+.MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0 !important;
+}
+
+.MuiButtonBase-root.MuiAccordionSummary-root {
+  padding: 0 !important;
+}
+
+.MuiPaper-root:last-of-type {
+  border-radius: 0px !important;
+}
+
+.MuiPaper-root {
+  position: static !important;
+}
+
+/* .MuiAccordionDetails-root{
+  margin-top: 20px;
+} */

@@ -1,0 +1,8 @@
+.cart {
+    font-size: 10px;
+}
+.truncate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
