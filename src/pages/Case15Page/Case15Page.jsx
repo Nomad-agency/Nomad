@@ -202,7 +202,7 @@ const Case15Page = () => {
             loop
             muted
             playsInline
-            className={`w-[49%] xl:w-[598px] h-auto`}
+            className={`h-[262px] xs:h-[303px] sm:h-[490px] md:h-[665px] lg:h-[888px] xl:h-[1046px] w-auto`}
           ></video>
           <video
             src={video7}
@@ -210,7 +210,7 @@ const Case15Page = () => {
             loop
             muted
             playsInline
-            className={`w-[49%] xl:w-[598px] h-auto`}
+            className={`h-[262px] xs:h-[303px] sm:h-[490px] md:h-[665px] lg:h-[888px] xl:h-[1046px] w-auto`}
           ></video>
         </div>
 
