@@ -71,7 +71,7 @@ const Case4Page = () => {
         {/* Section 1 */}
         <InfoSection caseData={caseData} />
 
-        <video src={video5} autoPlay loop muted playsInline className="mt-12 w-full h-auto"></video>
+        <video src={video5} autoPlay loop muted playsInline className="mt-5 md:mt-[50px] w-full h-auto"></video>
 
         {/* Section 2 */}
         <HalfText 
