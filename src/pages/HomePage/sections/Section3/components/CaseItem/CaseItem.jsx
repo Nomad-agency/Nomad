@@ -29,6 +29,7 @@ export default function CaseItem({
                                    title,
                                    link,
                                    cards = [],
+                                   check=false
                                  }) {
   const containerRef = useRef(null);
   const ellipsisRef = useRef(null);
@@ -143,7 +144,8 @@ export default function CaseItem({
       ref={containerRef}
       className={`
         ${background} bg-cover
-        ${background === 'bg-bg-4' ? 'bg-center' : 'bg-left-bottom'} 
+        ${check ? 'bg-center md:bg-left-bottom' : 'bg-left-bottom'}
+        ${background === 'bg-bg-4' ? '!bg-center' : ''} 
         w-full h-[352px] sm:h-[410px] xl:h-[460px] 
         rounded-[10px] p-5 relative cursor-pointer block
       `}

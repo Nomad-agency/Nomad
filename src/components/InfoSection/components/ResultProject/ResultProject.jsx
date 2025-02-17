@@ -1,10 +1,10 @@
 import * as React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 const ResultProject = ({ data = [] }) => {
   return (
     <div className="mt-[3.125rem]">
@@ -13,7 +13,7 @@ const ResultProject = ({ data = [] }) => {
 
         {
           data.length < 4 ?
-          <div className={`${data.length <= 3 ? 'w-[70%] md:w-[48%]' : 'w-auto'} flex items-start md:justify-normal justify-between md:gap-16`}>
+          <div className={`${data.length <= 3 ? 'w-[80%] md:w-[48%]' : 'w-auto'} flex items-start md:justify-normal justify-between md:gap-16`}>
             {data.map((item, index) => (
               <div className="flex flex-col gap-2 md:gap-5" key={index}>
                 <span className="text-[25px] md:text-[4.0625rem] font-medium leading-[20px] md:leading-[51.5px] whitespace-nowrap">{item.title}</span>
@@ -26,9 +26,14 @@ const ResultProject = ({ data = [] }) => {
             <Swiper
               slidesPerView={window.innerWidth > 576 ? 5 : 3}
               spaceBetween={30}
-              pagination={{
-                clickable: true,
+              loop={true} //important for autoplay
+              speed={2000} //important for autoplay
+              autoplay={{ //important for autoplay
+                // enabled: true,
+                delay: 0,
+                disableOnInteraction: false
               }}
+              modules={[Autoplay]} //important for autoplay
               className="mySwiper"
             >
               {data.map((item, index) => (

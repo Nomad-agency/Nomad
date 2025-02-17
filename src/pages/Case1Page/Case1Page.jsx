@@ -79,7 +79,7 @@ const Case1Page = () => {
       {/* Section 12 */}
       <img src={image10} alt="photo9" className="mt-5 md:mt-20 w-full h-auto" />
 
-      <NextPrevCase dataPrev={casesData[0]} dataNext={casesData[3]} link={"/case10"}/>
+      <NextPrevCase dataPrev={casesData[0]} dataNext={casesData[3]} link={"/case10"} check={true}/>
 
       <Footer />
     </main>

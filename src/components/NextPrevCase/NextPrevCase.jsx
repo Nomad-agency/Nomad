@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
 import CaseItem from '../../pages/HomePage/sections/Section3/components/CaseItem/CaseItem';
 import { casesData } from '../../pages/utils/const';
-const NextPrevCase = ({ dataPrev, dataNext, link }) => {
+const NextPrevCase = ({ dataPrev, dataNext, link, check=false }) => {
   return (
     <>
       <div className="mt-[90px] md:mt-[180px]">
@@ -34,6 +34,7 @@ const NextPrevCase = ({ dataPrev, dataNext, link }) => {
                 title={dataNext.title}
                 link={dataNext.link}
                 cards={dataNext.cards}
+                check={check}
               />
             </Grid>
           </Grid>

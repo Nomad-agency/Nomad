@@ -104,7 +104,7 @@ const Case5Page = () => {
         {/* Section 14 */}
         <Col2Photo image1={image13} image2={image14} />
 
-        <NextPrevCase dataPrev={casesData[6]} dataNext={casesData[8]} link={"/case11"}/>
+        <NextPrevCase dataPrev={casesData[6]} dataNext={casesData[8]} link={"/case11"} check={true}/>
 
         <Footer />
       </main>

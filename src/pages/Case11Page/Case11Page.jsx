@@ -103,7 +103,7 @@ const Case11Page = () => {
           ></video>
         </div>
 
-        <NextPrevCase dataPrev={casesData[7]} dataNext={casesData[9]} link={"/case13"}/>
+        <NextPrevCase dataPrev={casesData[7]} dataNext={casesData[9]} link={"/case13"} check={true}/>
 
         <Footer />
       </main>
