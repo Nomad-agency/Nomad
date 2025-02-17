@@ -17,6 +17,8 @@ import Case12Page from '../pages/Case12Page/Case12Page';
 import Case13Page from '../pages/Case13Page/Case13Page';
 import Case14Page from '../pages/Case14Page/Case14Page';
 import Case15Page from '../pages/Case15Page/Case15Page';
+import PrivayPolicyPage from '../pages/PrivayPolicyPage/PrivayPolicyPage';
+import PersonalDataPage from '../pages/PersonalDataPage/PersonalDataPage';
 const AppRoutes = () => {
   return (
     <>
@@ -39,6 +41,8 @@ const AppRoutes = () => {
           <Route path="/case13" element={<Case13Page />} />
           <Route path="/case14" element={<Case14Page />} />
           <Route path="/case15" element={<Case15Page />} />
+          <Route path="/privacypolicy" element={<PrivayPolicyPage />} />
+          <Route path="/personaldata" element={<PersonalDataPage />} />
         </Routes>
       </Router>
     </>

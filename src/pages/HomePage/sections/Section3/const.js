@@ -13,7 +13,7 @@ export const casesData = [
   },
   {
     background: 'bg-bg-3',
-    title: 'pop-up самолет',
+    title: 'Pop-up «Самолет»',
     link: '/case7',
     cards: ['events', 'архитектура'],
   },
