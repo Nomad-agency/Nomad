@@ -37,7 +37,7 @@ const SortByCondition = ({ sortCase }) => {
     },
     {
       background: 'bg-bg-6',
-      title: 'маскот «Альфа-капитал»',
+      title: 'маскот УК « Альфа-капитал »',
       link: '/case1',
       cards: ['3d', 'стратегия', 'digital'],
     },
