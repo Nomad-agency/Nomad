@@ -4,6 +4,7 @@ import CardItem from '../UI/CardItem/index.jsx';
 import ButtonCase from '../UI/ButtonCase/ButtonCase.jsx';
 import { HiDotsHorizontal } from 'react-icons/hi';
 import styled from './index.module.css';
+import { Link } from 'react-router-dom';
 
 /**
  * Компонент CaseItem отображает кейс с заголовком, кнопкой и набором карточек.
@@ -137,13 +138,14 @@ export default function CaseItem({
   };
 
   return (
-    <div
+    <Link
+      to={link}
       ref={containerRef}
       className={`
         ${background} bg-cover
         ${background === 'bg-bg-4' ? 'bg-center' : 'bg-left-bottom'} 
         w-full h-[352px] sm:h-[410px] xl:h-[460px] 
-        rounded-[10px] p-5 relative cursor-pointer
+        rounded-[10px] p-5 relative cursor-pointer block
       `}
     >
       {/* Заголовок кейса и кнопка (поверх фона) */}
@@ -174,7 +176,7 @@ export default function CaseItem({
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

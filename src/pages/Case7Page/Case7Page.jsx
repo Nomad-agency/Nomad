@@ -53,6 +53,8 @@ const Case7Page = () => {
         {/* Section 1 */}
         <InfoSection caseData={caseData} />
 
+        <div className="mt-5 md:mt-[50px] mb-[-30px] text-[0.5rem] md:text-sm font-bold uppercase tracking-tighter whitespace-nowrap">[Renders]</div>
+
         {/* Section 2 */}
         <ImageCustom image={image1} />
 
@@ -68,6 +70,8 @@ const Case7Page = () => {
         <HalfText 
           title={'Центральной частью пространства и главным eye-catcher\'ом стала инсталляция с «залипательным» контентом. Мы полностью разработали ее архитектуру и наполнение.'}
         />
+
+        <div className="mt-5 md:mt-[50px] mb-[-30px] text-[0.5rem] md:text-sm font-bold uppercase tracking-tighter whitespace-nowrap text-right">[REAL photos]</div>
 
         {/* Section 7 */}
         <ImageCustom image={image10} />

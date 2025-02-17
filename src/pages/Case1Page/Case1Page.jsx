@@ -47,7 +47,7 @@ const Case1Page = () => {
       <video src={video} autoPlay loop muted playsInline className="mt-12 w-full h-auto"></video>
 
       {/* Section 3 */}
-      <div className="mt-5">
+      <div className="mt-5 md:mt-[50px]">
         <Type1 type1Data={type1Data} />
       </div>
 
@@ -58,15 +58,15 @@ const Case1Page = () => {
       <Col2Photo image1={image4} image2={image5} />
 
       {/* Section 6 */}
-      <img src={image6} alt="photo6" className="mt-5 w-full h-auto" />
+      <img src={image6} alt="photo6" className="mt-5 md:mt-[50px] w-full h-auto" />
 
       {/* Section 7 */}
       <Col2Photo image1={image7} image2={image8} />
       {/* Section 8 */}
-      <img src={image9} alt="photo9" className="mt-5 w-full h-auto" />
+      <img src={image9} alt="photo9" className="mt-5 md:mt-[50px] w-full h-auto" />
 
       {/* Section 9 video*/}
-      <video src={video2} autoPlay loop muted playsInline className="mt-5 w-full h-auto"></video>
+      <video src={video2} autoPlay loop muted playsInline className="mt-5 md:mt-[50px] w-full h-auto"></video>
 
       <div className="text-[17px] sm:text-[3.125rem] font-normal text-justify tracking-tighter leading-[18px] sm:leading-[52px] mt-5 sm:mt-28">
         Главная цель создания маскота — продвижение бренда. Поэтому мы разработали коммуникационную стратегию для внедрения

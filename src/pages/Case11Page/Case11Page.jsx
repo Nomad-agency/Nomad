@@ -63,7 +63,7 @@ const Case11Page = () => {
         <video src={video1} autoPlay loop muted playsInline className="mt-12 w-full h-auto"></video>
 
         {/* Section 3 */}
-        <div className="mt-5">
+        <div className="mt-5 md:mt-[50px]">
           <Type3 type1Data={type1Data} />
         </div>
 

@@ -25,7 +25,7 @@ const SortByCondition = ({ sortCase }) => {
     },
     {
       background: 'bg-bg-4',
-      title: 'lunda padel',
+      title: 'Rebranding lunda',
       link: '/case10',
       cards: ['брендинг', '3d', 'партнерство'],
     },
@@ -43,13 +43,13 @@ const SortByCondition = ({ sortCase }) => {
     },
     {
       background: 'bg-bg-7',
-      title: 'radi mira i lubvi',
+      title: 'Rebranding RML',
       link: '/case2',
       cards: ['брендинг', '3d'],
     },
     {
       background: 'bg-bg-8',
-      title: 'pop-up skin by bodium',
+      title: 'запуск Косметологии',
       link: '/case5',
       cards: ['events', 'архитектура'],
     },
@@ -67,31 +67,31 @@ const SortByCondition = ({ sortCase }) => {
     },
     {
       background: 'bg-bg-11',
-      title: 'игра « Альфа-Капитал »',
+      title: '«Капитальный прыжок»',
       link: '/case14',
       cards: ['Digital', 'ux/ui дизайн', '3d'],
     },
     {
       background: 'bg-bg-12',
-      title: 'мерч « альфа-капитал »',
+      title: 'Limitless opportunities',
       link: '/case8',
       cards: ['мерч'],
     },
     {
       background: 'bg-bg-13',
-      title: 'запуск bodium',
+      title: 'GRAND OPENING',
       link: '/case6',
       cards: ['events'],
     },
     {
       background: 'bg-bg-14',
-      title: '« жилизный базар » ',
+      title: 'SBER BAZAR',
       link: '/case4',
       cards: ['events', 'брендинг', 'smm \\ pr'],
     },
     {
       background: 'bg-bg-15',
-      title: 'create your reality',
+      title: 'create your reality?',
       link: '/case12',
       cards: ['smm \\ pr', 'production'],
     },
@@ -439,6 +439,30 @@ const SortByCondition = ({ sortCase }) => {
     case "Digital":
       return (
         <>
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={'15px'}>
+              <Grid size={{ xs: 12, lg: 8 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[10].background}
+                  title={casesData[10].title}
+                  link={casesData[10].link}
+                  cards={casesData[10].cards}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 4 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[5].background}
+                  title={casesData[5].title}
+                  link={casesData[5].link}
+                  cards={casesData[5].cards}
+                />
+              </Grid>
+            </Grid>
+          </Box>
           <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
           <Grid container spacing={{ xs: '10px', lg: '15px' }}>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -449,26 +473,6 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[8].title}
                 link={casesData[8].link}
                 cards={casesData[8].cards}
-              />
-            </Grid>
-            <Grid size={{ xs: 12, lg: 4 }}>
-              <CaseItem
-                isFocus2={true}
-                isFocus={true}
-                background={casesData[10].background}
-                title={casesData[10].title}
-                link={casesData[10].link}
-                cards={casesData[10].cards}
-              />
-            </Grid>
-            <Grid size={{ xs: 12, lg: 4 }}>
-              <CaseItem
-                isFocus2={true}
-                isFocus={true}
-                background={casesData[5].background}
-                title={casesData[5].title}
-                link={casesData[5].link}
-                cards={casesData[5].cards}
               />
             </Grid>
           </Grid>

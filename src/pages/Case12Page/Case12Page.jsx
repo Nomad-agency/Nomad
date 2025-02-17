@@ -51,7 +51,7 @@ const Case12Page = () => {
         <LongImgVideo image={image1} video={video1}/>
 
         {/* Section 3 */}
-        <div className="mt-5">
+        <div className="mt-5 md:mt-[50px]">
           <Type3 type1Data={type1Data} />
         </div>
 

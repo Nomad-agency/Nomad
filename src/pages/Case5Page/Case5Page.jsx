@@ -47,7 +47,7 @@ const Case5Page = () => {
       'Внутри размещена инсталляция из капельниц, символизирующая важность кислорода для кожи.',
     image1: image3,
     image2: image4,
-    widthTitle2: 'w-[47%]',
+    widthTitle2: 'w-[50%]',
   };
   return (
     <>
@@ -69,7 +69,7 @@ const Case5Page = () => {
         <img src={image2} alt="image_2" className="mt-5 md:mt-[50px]"/>
 
         {/* Section 5 */}
-        <div className="mt-5">
+        <div className="mt-5 md:mt-[50px]">
           <Type1 type1Data={type1Data} />
         </div>
 

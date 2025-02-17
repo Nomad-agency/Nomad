@@ -13,7 +13,6 @@ import image8 from "./assets/image_8.svg"
 import image9 from "./assets/image_9.svg"
 import image10 from "./assets/image_10.svg"
 import image11 from "./assets/image_11.svg"
-import Type1 from '../../components/Type1/Type1';
 import Col2Photo from '../../components/Col2Photo/Col2Photo';
 import HalfText from '../../components/HalfText/HalfText';
 import Footer from '../../components/Footer/Footer';
@@ -59,7 +58,7 @@ const Case14Page = () => {
         <ImageCustom image={image1} />
 
         {/* Section 3 */}
-        <div className="mt-5 mb-10">
+        <div className="mt-5 md:mt-[50px] mb-10">
           <Type3 type1Data={type1Data} />
         </div>
 
