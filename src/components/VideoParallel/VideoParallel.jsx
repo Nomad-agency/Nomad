@@ -3,7 +3,7 @@ import React from 'react'
 const VideoParallel = ({ video1, video2 }) => {
   return (
     <>
-      <div className="flex justify-between mt-[50px]">
+      <div className="flex justify-between mt-5 md:mt-[50px]">
         <video
           src={video1}
           autoPlay

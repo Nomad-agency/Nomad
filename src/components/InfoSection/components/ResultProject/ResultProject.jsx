@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 const ResultProject = ({ data = [] }) => {
   return (
-    <div className="mt-[3.125rem]">
+    <div className="mt-10 md:mt-[3.125rem]">
       <div className="flex justify-between items-start">
         <span className="text-[0.5rem] md:text-sm font-bold uppercase tracking-tighter">[результаты]</span>
 

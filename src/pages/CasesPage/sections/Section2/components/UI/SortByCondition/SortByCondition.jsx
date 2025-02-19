@@ -66,7 +66,7 @@ const SortByCondition = ({ sortCase }) => {
       cards: ['мерч', '3d'],
     },
     {
-      background: 'bg-bg-11',
+      background: window.innerWidth < 576 ? 'bg-bg-11-1' : 'bg-bg-11',
       title: '«Капитальный прыжок»',
       link: '/case14',
       cards: ['Digital', 'UX/UI-дизайн', '3d'],
