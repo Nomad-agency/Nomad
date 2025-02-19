@@ -13,7 +13,7 @@ const ResultProject = ({ data = [] }) => {
 
         {
           data.length < 4 ?
-          <div className={`${data.length <= 3 ? 'w-[80%] md:w-[48%]' : 'w-auto'} flex items-start md:justify-normal justify-between md:gap-16`}>
+          <div className={`${data.length <= 3 ? 'w-[74%] md:w-[48%]' : 'w-auto'} flex items-start md:justify-normal md:gap-16 gap-7`}>
             {data.map((item, index) => (
               <div className="flex flex-col gap-2 md:gap-5" key={index}>
                 <span className="text-[25px] md:text-[4.0625rem] font-medium leading-[20px] md:leading-[51.5px] whitespace-nowrap">{item.title}</span>

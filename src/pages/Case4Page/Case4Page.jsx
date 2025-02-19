@@ -47,12 +47,12 @@ const Case4Page = () => {
         desc: 'гостей',
       },
       {
-        title: '90',
-        desc: 'конвертаций в сделку',
+        title: window.innerWidth < 576 ? '115' : '90',
+        desc: window.innerWidth < 576 ? 'принятых заявок' : 'конвертаций в сделку',
       },
       {
-        title: '115',
-        desc: 'принятых заявок',
+        title: window.innerWidth < 576 ? '90' : '115',
+        desc: window.innerWidth < 576 ? 'конвертаций \nв сделку' : 'принятых \nзаявок',
       }
     ],
   };

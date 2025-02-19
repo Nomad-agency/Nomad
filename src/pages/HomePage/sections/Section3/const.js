@@ -3,7 +3,7 @@ export const casesData = [
     background: 'bg-bg-1',
     title: 'Лига уличного футбола',
     link: '/case15',
-    cards: ['брендинг', 'ux/ui дизайн', 'events', 'партнерство', 'smm \\ pr', 'production'],
+    cards: ['брендинг', 'ux/ui-дизайн', 'events', 'партнерство', 'SMM/PR', 'production'],
   },
   {
     background: 'bg-bg-2',

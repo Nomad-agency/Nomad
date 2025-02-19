@@ -24,7 +24,7 @@ const Case12Page = () => {
     result: [
       {
         title: '1',
-        desc: 'единственный бутик',
+        desc: window.innerWidth < 576 ? 'бутик' : 'единственный бутик',
       },
       {
         title: '500 000',

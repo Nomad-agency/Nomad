@@ -9,7 +9,7 @@ const SortByCondition = ({ sortCase }) => {
       background: 'bg-bg-1',
       title: 'Лига уличного футбола',
       link: '/case15',
-      cards: ['брендинг', 'ux/ui дизайн', 'events', 'партнерство', 'smm \\ pr', 'production'],
+      cards: ['брендинг', 'UX/UI-дизайн', 'events', 'партнерство', 'SMM/PR', 'production'],
     },
     {
       background: 'bg-bg-2',
@@ -57,7 +57,7 @@ const SortByCondition = ({ sortCase }) => {
       background: 'bg-bg-9',
       title: '«Исполнение мечты»',
       link: '/case11',
-      cards: ['Digital', 'ux/ui дизайн'],
+      cards: ['Digital', 'UX/UI-дизайн'],
     },
     {
       background: 'bg-bg-10',
@@ -69,7 +69,7 @@ const SortByCondition = ({ sortCase }) => {
       background: 'bg-bg-11',
       title: '«Капитальный прыжок»',
       link: '/case14',
-      cards: ['Digital', 'ux/ui дизайн', '3d'],
+      cards: ['Digital', 'UX/UI-дизайн', '3d'],
     },
     {
       background: 'bg-bg-12',
@@ -87,13 +87,13 @@ const SortByCondition = ({ sortCase }) => {
       background: 'bg-bg-14',
       title: 'SBER BAZAR',
       link: '/case4',
-      cards: ['events', 'брендинг', 'smm \\ pr'],
+      cards: ['events', 'брендинг', 'SMM/PR'],
     },
     {
       background: 'bg-bg-15',
       title: 'create your reality?',
       link: '/case12',
-      cards: ['smm \\ pr', 'production'],
+      cards: ['SMM/PR', 'production'],
     },
   ];
   console.log(sortCase)
@@ -393,7 +393,7 @@ const SortByCondition = ({ sortCase }) => {
         </Box>
         </>
       )
-    case "UX/UI дизайн":
+    case "UX/UI-дизайн":
       return (
         <>
           <Box sx={{ flexGrow: 1 }}>

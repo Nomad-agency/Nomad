@@ -33,7 +33,7 @@ const Case14Page = () => {
       },
       {
         title: 'NDA',
-        desc: 'дополнительный доход ',
+        desc: 'дополнительный \nдоход ',
       }
     ],
     nowrap: true

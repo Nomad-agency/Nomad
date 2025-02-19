@@ -6,7 +6,7 @@ const Sort = ({ sortCase, setSortCase }) => {
     { name: 'Все', count: 15 },
     { name: 'Брендинг', count: 4 },
     { name: '3D', count: 5 },
-    { name: 'UX/UI дизайн', count: 3 },
+    { name: 'UX/UI-дизайн', count: 3 },
     { name: 'Digital', count: 3 },
     { name: 'Events', count: 7 },
     { name: 'Стратегия и позиционирование', count: 1 },
