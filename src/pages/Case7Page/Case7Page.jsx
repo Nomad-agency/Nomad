@@ -11,6 +11,10 @@ import image11 from "./assets/image_11.png"
 import image12 from "./assets/image_12.png"
 import image13 from "./assets/image_13.png"
 import image14 from "./assets/image_14.png"
+import video1 from "./assets/video_1.mp4"
+import video2 from "./assets/video_2.mp4"
+import video3 from "./assets/video_3.mp4"
+import video4 from "./assets/video_4.mp4"
 import Type1 from '../../components/Type1/Type1'
 import Col2Photo from '../../components/Col2Photo/Col2Photo'
 import HalfText from '../../components/HalfText/HalfText'
@@ -58,8 +62,47 @@ const Case7Page = () => {
         {/* Section 2 */}
         <ImageCustom image={image1} />
 
+        {/* Section 3 */}
+        <div className={`flex justify-between mt-5 md:mt-[50px]`}>
+          <video
+            src={video1}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={`h-[85px] xs:h-[95px] sm:h-[155px] md:h-[210px] lg:h-[280px] xl:h-[330px] w-auto`}
+          ></video>
+          <video
+            src={video2}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={`h-[85px] xs:h-[95px] sm:h-[155px] md:h-[210px] lg:h-[280px] xl:h-[330px] w-auto`}
+          ></video>
+        </div>
+
+        <div className={`flex justify-between mt-5 md:mt-[50px]`}>
+          <video
+            src={video3}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={`h-[85px] xs:h-[95px] sm:h-[155px] md:h-[210px] lg:h-[280px] xl:h-[330px] w-auto`}
+          ></video>
+          <video
+            src={video4}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={`h-[85px] xs:h-[95px] sm:h-[155px] md:h-[210px] lg:h-[280px] xl:h-[330px] w-auto`}
+          ></video>
+        </div>
+
         {/* Section 4 */}
-        <div className="mt-[50px]">
+        <div className="mt-5 md:mt-[50px]">
           <Type1 type1Data={type1Data} />
         </div>
 
