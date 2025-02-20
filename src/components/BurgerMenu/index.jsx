@@ -20,7 +20,7 @@ const BurgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+      }, 3000); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
     }
   };
   return (
@@ -28,7 +28,7 @@ const BurgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
       [styles.slideSideBar]: isMenuOpen
     })}>
       <div className="flex flex-col gap-6 pl-[20%]">
-        <Link to="/" className="uppercase" onClick={(e) => handleScrollToSection(e, '#about')}>[о нас]</Link>
+        <Link to="#about" className="uppercase" onClick={(e) => handleScrollToSection(e, '#about')}>[о нас]</Link>
         <Link to="/cases" className="uppercase">[кейсы]</Link>
         <Link to="/" className="uppercase" onClick={(e) => handleScrollToSection(e, '#services')}>[услуги]</Link>
         <Link to="/" className="uppercase" onClick={(e) => handleScrollToSection(e, '#footer')}>[контакты]</Link>

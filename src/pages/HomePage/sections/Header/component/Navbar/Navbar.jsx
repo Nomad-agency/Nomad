@@ -17,7 +17,7 @@ const Navbar = ({ isBlack = false }) => {
         bar1.current.style.margin = "2px 0";
         bar3.current.style.margin = "2px 0";
         setIsMenuOpen(!isMenuOpen);
-      }, 500)
+      }, 3000)
     }
     else{
       setIsMenuOpen(!isMenuOpen);
