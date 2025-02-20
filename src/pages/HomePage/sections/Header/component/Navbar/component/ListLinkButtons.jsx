@@ -6,7 +6,7 @@ function ListLinkButtons({ isBlack = false }) {
   const navbarContent = [
     {
       title: '[о нас]',
-      link: '/about',
+      link: '#about',
     },
     {
       title: '[кейсы]',
@@ -14,11 +14,11 @@ function ListLinkButtons({ isBlack = false }) {
     },
     {
       title: '[услуги]',
-      link: '/services',
+      link: '#services',
     },
     {
       title: '[контакты]',
-      link: '/contact',
+      link: '#footer',
     },
   ];
   return (
