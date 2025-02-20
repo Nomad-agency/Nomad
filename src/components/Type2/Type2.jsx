@@ -7,12 +7,12 @@ const Type2 = ({ type2Data }) => {
     <section className="text-secondary">
       <div className="hidden md:flex justify-between items-start">
         <div>
-          <img src={type2Data.image1} alt="photo2" className="w-full h-auto" />
+          <img src={type2Data.image1} alt="photo2" className="w-full h-auto" loading='lazy'/>
         </div>
         <div className={`${type2Data.customWidth ? type2Data.customWidth : 'w-1/2'} self-stretch relative`}>
           <p className="text-[1.4375rem] leading-[26.45px] font-medium">{type2Data.title1}</p>
 
-          <img src={type2Data.image2} alt="photo1" className="absolute bottom-0 right-0" />
+          <img src={type2Data.image2} alt="photo1" className="absolute bottom-0 right-0" loading='lazy'/>
         </div>
       </div>
 

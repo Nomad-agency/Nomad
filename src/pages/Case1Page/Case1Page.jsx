@@ -52,18 +52,18 @@ const Case1Page = () => {
       </div>
 
       {/* Section 4 */}
-      <img src={image3} alt="photo3" className="mt-5 sm:mt-[3.125rem] w-full h-auto" />
+      <img src={image3} alt="photo3" className="mt-5 sm:mt-[3.125rem] w-full h-auto" loading='lazy'/>
 
       {/* Section 5 */}
       <Col2Photo image1={image4} image2={image5} />
 
       {/* Section 6 */}
-      <img src={image6} alt="photo6" className="mt-5 md:mt-[50px] w-full h-auto" />
+      <img src={image6} alt="photo6" className="mt-5 md:mt-[50px] w-full h-auto" loading='lazy'/>
 
       {/* Section 7 */}
       <Col2Photo image1={image7} image2={image8} />
       {/* Section 8 */}
-      <img src={image9} alt="photo9" className="mt-5 md:mt-[50px] w-full h-auto" />
+      <img src={image9} alt="photo9" className="mt-5 md:mt-[50px] w-full h-auto" loading='lazy'/>
 
       {/* Section 9 video*/}
       <video src={video2} autoPlay loop muted playsInline className="mt-5 md:mt-[50px] w-full h-auto"></video>
@@ -77,7 +77,7 @@ const Case1Page = () => {
       <TargetGrid />
 
       {/* Section 12 */}
-      <img src={image10} alt="photo9" className="mt-5 md:mt-20 w-full h-auto" />
+      <img src={image10} alt="photo9" className="mt-5 md:mt-20 w-full h-auto" loading='lazy'/>
 
       <NextPrevCase dataPrev={casesData[0]} dataNext={casesData[3]} link={"/case10"} check={true}/>
 

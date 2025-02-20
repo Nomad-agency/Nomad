@@ -43,7 +43,7 @@ const Case2Page = () => {
       <InfoSection caseData={caseData} />
 
       {/* Section 2 */}
-      <img src={image1} alt="photo1" className="mt-5 md:mt-[50px] w-full h-auto" />
+      <img src={image1} alt="photo1" className="mt-5 md:mt-[50px] w-full h-auto" loading='lazy'/>
 
       {/* Section 3 */}
       <HalfText 
@@ -54,7 +54,7 @@ const Case2Page = () => {
       <Col2Photo image1={image2} image2={image3} />
 
       {/* Section 5 */}
-      <img src={image4} alt="photo1" className="mt-5 md:mt-[50px] w-full h-auto" />
+      <img src={image4} alt="photo1" className="mt-5 md:mt-[50px] w-full h-auto" loading='lazy'/>
 
       {/* Section 6 */}
       <div className="mt-5 md:mt-[3.125rem]">
@@ -62,7 +62,7 @@ const Case2Page = () => {
       </div>
 
       {/* Section 7 */}
-      <img src={image7} alt="photo7" className="mt-5 md:mt-[50px] w-full h-auto" />
+      <img src={image7} alt="photo7" className="mt-5 md:mt-[50px] w-full h-auto" loading='lazy'/>
 
       {/* Section 8 */}
       <HalfText 
@@ -73,7 +73,7 @@ const Case2Page = () => {
       <Col2Photo image1={image8} image2={image9} />
 
       {/* Section 10 */}
-      <img src={image10} alt="photo10" className="mt-5 md:mt-[50px] w-full h-auto" />
+      <img src={image10} alt="photo10" className="mt-5 md:mt-[50px] w-full h-auto" loading='lazy'/>
 
       {/* Section 11 */}
       <Col2Photo image1={image11} image2={image12} />

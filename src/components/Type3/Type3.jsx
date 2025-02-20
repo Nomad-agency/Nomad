@@ -9,11 +9,11 @@ const Type3 = ({ type1Data }) => {
         <div className="w-[50%] self-stretch relative"> {/* pt-[1.875rem] */}
           <p className="text-[10px] sm:text-[1.4375rem] leading-[13px] sm:leading-[26.45px] font-medium whitespace-pre-line tracking-tight">{type1Data.title1}</p>
 
-          <img src={type1Data.image1} alt="photo1" className="absolute bottom-0 left-0 w-1/2 sm:w-auto" />
+          <img src={type1Data.image1} alt="photo1" className="absolute bottom-0 left-0 w-1/2 sm:w-auto" loading='lazy'/>
         </div>
 
         <div className="w-1/2 sm:w-auto">
-          <img src={type1Data.image2} alt="photo2" className="w-auto sm:w-full h-[168px] sm:h-auto" />
+          <img src={type1Data.image2} alt="photo2" className="w-auto sm:w-full h-[168px] sm:h-auto" loading='lazy'/>
         </div>
       </div>
 

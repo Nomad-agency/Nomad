@@ -55,7 +55,7 @@ const Case10Page = () => {
 
         {/* Section 2 */}
         <div className="flex justify-between mt-[50px]">
-          <img src={image1} alt="image" className="xl:w-auto h-[175px] xs:h-[195px] sm:h-[320px] md:h-[430px] lg:h-[580px] xl:h-auto" />
+          <img src={image1} alt="image" className="xl:w-auto h-[175px] xs:h-[195px] sm:h-[320px] md:h-[430px] lg:h-[580px] xl:h-auto" loading='lazy'/>
           <video
             src={video1}
             autoPlay

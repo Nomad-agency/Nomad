@@ -83,7 +83,7 @@ const Case6Page = () => {
         <Col2Photo image1={image2} image2={image3} />
 
         {/* Section 5 */}
-        <img src={image4} alt="image 4" className="mt-[20px] md:mt-[50px]"/>
+        <img src={image4} alt="image 4" className="mt-[20px] md:mt-[50px]" loading='lazy'/>
 
         {/* Section 6 */}
         <div className="mt-5 md:mt-[50px]">
