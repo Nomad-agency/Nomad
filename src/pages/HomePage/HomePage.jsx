@@ -19,7 +19,7 @@ export default function HomePage() {
       setIsPreloader(true);
       sessionStorage.setItem('preloaderState', 'false');
     }
-  });
+  }, []);
   return (
     <>
       <Preloader isPreloader={isPreloader}>

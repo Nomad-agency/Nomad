@@ -33,13 +33,10 @@ export function ComponentPreloader({ setIsVisible, isPreloader }) {
   };
 
   const [currentWord, setCurrentWord] = useState('MAD');
+  
 
-  if (isPreloader) {
-    useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIsRotatingWord, isPreloader);
-  }
-  else{
-    useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIsRotatingWord, isPreloader);
-  }
+  
+  useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIsRotatingWord, isPreloader);
 
   return (
     <div ref={containerRef}>

@@ -19,7 +19,10 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
 
   useGSAP(
     () => {
-      if (isPreloader) {
+      // Kiểm tra trạng thái preloader từ sessionStorage
+      const preloaderState = sessionStorage.getItem('preloaderState');
+      if (isPreloader && preloaderState !== 'false') {
+        console.log('isPreloader', isPreloader);
         const tl = gsap.timeline({ defaults: { ease: EASING.DEFAULT } });
 
         // Начальные анимации:
@@ -165,6 +168,55 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
           tl.kill();
         };
       } else {
+        console.log('isPreloader', isPreloader);
+        const tl = gsap.timeline({ defaults: { ease: EASING.DEFAULT } });
+        tl.fromTo(
+          headerRef.current,
+          {
+            display: 'none',
+            height: 0,
+          },
+          {
+            display: 'block',
+            height: '100vh',
+            duration: DURATION.HEADER,
+            ease: EASING.DEFAULT,
+          },
+          '<',
+        )
+          .to(
+            preloaderRef.current,
+            {
+              display: 'none',
+              duration: DURATION.PRELOADER_HIDE,
+            },
+            '<',
+          )
+          .fromTo(
+            section1Ref.current,
+            {
+              y: '-50vh',
+              display: 'none',
+            },
+            {
+              y: 0,
+              display: 'block',
+              duration: DURATION.SECTION,
+              ease: EASING.SLIDE_IN,
+            },
+            '-=0.5',
+          )
+          .to(preloaderRef.current, {
+            duration: 0,
+            onComplete: () => setIsVisible(true),
+          })
+          .to(
+            section1Ref.current,
+            {
+              onComplete: () => setIsRotatingWord(true),
+            },
+            '+=0.5',
+          );
         setIsVisible(true);
       }
     },
