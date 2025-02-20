@@ -18,7 +18,7 @@ function ListLinkButtons({ isBlack = false }) {
     },
     {
       title: '[контакты]',
-      link: '#footer',
+      link: '#contact',
     },
   ];
   return (

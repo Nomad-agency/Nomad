@@ -16,7 +16,8 @@ function LinkButton({ index, link, title, isBlack }) {
       // navigate("/");
       // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
       setTimeout(() => {
-        window.scrollTo({ top: document.querySelector(href).offsetTop, behavior: 'smooth' });
+        const targetElement = document.querySelector(href);
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 300); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
     }
   };

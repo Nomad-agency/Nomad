@@ -6,7 +6,7 @@ import PolicySection from './components/UI/PolicySection/PolicySection';
 const Section5 = () => {
   // 11.25rem = 180px
   return (
-    <section className="mt-[5.625rem] md:mt-[11.25rem] container mx-auto">
+    <section className="mt-[5.625rem] md:mt-[11.25rem] container mx-auto" id='contact'>
       <TitleSection />
 
       {/* Форма отправки данных */}
