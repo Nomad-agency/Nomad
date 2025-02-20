@@ -217,7 +217,10 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
             },
             '+=0.5',
           );
-        setIsVisible(true);
+          // setIsVisible(true);
+        return () => {
+          tl.kill();
+        };
       }
     },
     { scope: containerRef, dependencies: [isPreloader] },

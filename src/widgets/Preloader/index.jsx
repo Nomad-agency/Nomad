@@ -9,7 +9,7 @@ Preloader.propTypes = {
 };
 
 export function Preloader({ children, isPreloader }) {
-  const [isVisible, setIsVisible] = useState(isPreloader);
+  const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
   useLayoutEffect(() => {
