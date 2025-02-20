@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 LinkButton.propTypes = {
   index: PropTypes.number,
   link: PropTypes.string,
@@ -8,12 +8,12 @@ LinkButton.propTypes = {
 };
 
 function LinkButton({ index, link, title, isBlack }) {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   const handleScrollToSection = (e, href) => {
     if (href.startsWith("#")) {
       e.preventDefault();
       // Chuyển hướng về trang chính
-      // navigate("/");
+      navigate("/");
       // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
       setTimeout(() => {
         const targetElement = document.querySelector(href);

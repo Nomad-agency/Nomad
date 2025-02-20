@@ -5,10 +5,11 @@ import { ComponentPreloader } from './component/ComponentPreloader/index.jsx';
 
 Preloader.propTypes = {
   children: PropTypes.node.isRequired,
+  isPreloader: PropTypes.bool,
 };
 
-export function Preloader({ children }) {
-  const [isVisible, setIsVisible] = useState(false);
+export function Preloader({ children, isPreloader }) {
+  const [isVisible, setIsVisible] = useState(isPreloader);
   const elementRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -25,7 +26,7 @@ export function Preloader({ children }) {
 
   return (
     <>
-      <ComponentPreloader setIsVisible={setIsVisible} isPreloader={true} />
+      <ComponentPreloader setIsVisible={setIsVisible} isPreloader={isPreloader} />
       {isVisible && <div ref={elementRef}>{children}</div>}
     </>
   );
