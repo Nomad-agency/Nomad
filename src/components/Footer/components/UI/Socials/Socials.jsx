@@ -4,15 +4,11 @@ const Socials = () => {
   const socialsData = [
     {
       title: 'Telegram',
-      link: '/',
-    },
-    {
-      title: 'WhatsApp',
-      link: '/',
+      link: 'https://t.me/Chistiakova_Liza',
     },
     {
       title: 'Ins***ram',
-      link: '/',
+      link: 'https://www.instagram.com/nomad_agnc/',
     },
   ];
   return (
