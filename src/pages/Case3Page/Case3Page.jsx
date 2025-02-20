@@ -3,6 +3,7 @@ import HeaderBlack from '../../components/HeaderBlack/HeaderBlack';
 import InfoSection from '../../components/InfoSection/InfoSection';
 import image1 from './assets/image_1.png';
 import image2 from './assets/image_2.png';
+import image2_1 from './assets/image2_1.svg';
 import image3 from './assets/image_3.png';
 import image4 from './assets/image_4.png';
 import image5 from './assets/image_5.png';
@@ -48,7 +49,7 @@ const Case3Page = () => {
       'Запуск вдохновлен стилем tennis core, так как NRAV BEAUTY знает, что сейчас в моде. Для проведения события выбрали открытый теннисный корт, чтобы полностью погрузить гостей в настроение теннисной тематики и переместить их из каменных джунглей в тенистый парк.',
     title2:
       'Детали продумали до мелочей: накрытые на игровом поле столы с сет-дизайном, авторская коктейльная карта от бартендеров, lounge-зона под зонтиками на лежаках с сорбетом из лимонов, анкеты для it-girls для определения нрава каждой гостьи и танцы под dj-set под звездным небом. ',
-    image1: image2,
+    image1: window.innerWidth > 576 ? image2 : image2_1,
     image2: image3,
     widthTitle2: 'w-[70%] md:w-[50%]',
   };

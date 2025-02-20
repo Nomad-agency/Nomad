@@ -21,7 +21,7 @@ import { casesData } from '../utils/const';
 import HalfText from '../../components/HalfText/HalfText';
 const Case2Page = () => {
   const caseData = {
-    projectTitle: 'rebranding',
+    projectTitle: 'rebranding rml',
     clientTitle: 'radi mira i lubvi',
     cards: ['брендинг', '3d'],
     description:
