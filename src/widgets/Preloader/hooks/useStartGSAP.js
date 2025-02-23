@@ -113,7 +113,9 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
 
         // --- Скрываем прелоадер ---
         // Отображение header-а (например, меню или заголовка) и его анимация по высоте
-        const computedHeight = window.getComputedStyle(headerRef.current).height;
+        // const computedHeight = window.getComputedStyle(headerRef.current).height;
+        const userAgent = navigator.userAgent;
+        const isSafari = /iPhone/i.test(userAgent) && /Safari/i.test(userAgent) && !/CriOS/i.test(userAgent);
         tl.fromTo(
           headerRef.current,
           {
@@ -122,7 +124,7 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
           },
           {
             display: 'block',
-            height: computedHeight,
+            height: isSafari ? '90vh' : '100vh',
             duration: DURATION.HEADER,
             ease: EASING.DEFAULT,
           },
@@ -170,6 +172,8 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
       } else {
         console.log('isPreloader', isPreloader);
         const tl = gsap.timeline({ defaults: { ease: EASING.DEFAULT } });
+        const userAgent = navigator.userAgent;
+        const isSafari = /iPhone/i.test(userAgent) && /Safari/i.test(userAgent) && !/CriOS/i.test(userAgent);
         tl.fromTo(
           headerRef.current,
           {
@@ -178,7 +182,7 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
           },
           {
             display: 'block',
-            height: '100vh',
+            height: isSafari ? '90vh' : '100vh',
             duration: DURATION.HEADER,
             ease: EASING.DEFAULT,
           },

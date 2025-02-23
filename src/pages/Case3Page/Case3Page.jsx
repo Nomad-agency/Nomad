@@ -3,7 +3,7 @@ import HeaderBlack from '../../components/HeaderBlack/HeaderBlack';
 import InfoSection from '../../components/InfoSection/InfoSection';
 import image1 from './assets/image_1.png';
 import image2 from './assets/image_2.png';
-import image2_1 from './assets/image2_1.svg';
+import image2_1 from './assets/image2_1.png';
 import image3 from './assets/image_3.png';
 import image4 from './assets/image_4.png';
 import image5 from './assets/image_5.png';
