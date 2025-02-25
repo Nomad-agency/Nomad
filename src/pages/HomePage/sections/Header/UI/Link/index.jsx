@@ -18,7 +18,7 @@ function LinkButton({ index, link, title, isBlack }) {
       setTimeout(() => {
         const targetElement = document.querySelector(href);
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 3000); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+      }, 200); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
     }
   };
   return (

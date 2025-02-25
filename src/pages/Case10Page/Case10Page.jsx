@@ -7,7 +7,7 @@ import ImageCustom from '../../components/ImageCustom/ImageCustom'
 import image1 from "./assets/image_1.png"
 import image2 from "./assets/image_2.png"
 import image3 from "./assets/image_3.png"
-import image4 from "./assets/image_4.png"
+import image4 from "./assets/image_4.svg"
 import image5 from "./assets/image_5.png"
 import image6 from "./assets/image_6.png"
 import image7 from "./assets/image_7.png"

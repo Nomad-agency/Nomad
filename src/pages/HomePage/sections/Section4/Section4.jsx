@@ -20,7 +20,11 @@ const Section4 = () => {
     {
       id: 3,
       title: 'спецпроекты',
-      list: ['Архитектура', 'Digital-проекты', 'Мерч'],
+      list: [
+        <a href="http://nomad-arch.ru" target="_blank" dangerouslySetInnerHTML={{ __html: 'Дизайн-студия Nomad.Arch, выполняющая полную разработку архитектурного пространства в рамках проектов' }}></a>, 
+        'Digital-проекты', 
+        'Мерч'
+      ],
     },
     {
       id: 4,
@@ -28,6 +32,7 @@ const Section4 = () => {
       list: ['Разработка коммуникационной и SMM-стратегии', 'SMM/PR', 'Production'],
     },
   ];
+  
   // 11.25rem = 180px
   return (
     <div className="mt-[5.625rem] sm:mt-[11.25rem] container mx-auto" id="services">

@@ -170,57 +170,62 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
           tl.kill();
         };
       } else {
-        console.log('isPreloader', isPreloader);
         const tl = gsap.timeline({ defaults: { ease: EASING.DEFAULT } });
         const userAgent = navigator.userAgent;
         const isSafari = /iPhone/i.test(userAgent) && /Safari/i.test(userAgent) && !/CriOS/i.test(userAgent);
-        tl.fromTo(
-          headerRef.current,
-          {
-            display: 'none',
-            height: 0,
-          },
-          {
-            display: 'block',
-            height: isSafari ? '90vh' : '100vh',
-            duration: DURATION.HEADER,
-            ease: EASING.DEFAULT,
-          },
-          '<',
-        )
-          .to(
-            preloaderRef.current,
-            {
-              display: 'none',
-              duration: DURATION.PRELOADER_HIDE,
-            },
-            '<',
-          )
-          .fromTo(
-            section1Ref.current,
-            {
-              y: '-50vh',
-              display: 'none',
-            },
-            {
-              y: 0,
-              display: 'block',
-              duration: DURATION.SECTION,
-              ease: EASING.SLIDE_IN,
-            },
-            '-=0.5',
-          )
-          .to(preloaderRef.current, {
-            duration: 0,
-            onComplete: () => setIsVisible(true),
-          })
-          .to(
-            section1Ref.current,
-            {
-              onComplete: () => setIsRotatingWord(true),
-            },
-            '+=0.5',
-          );
+        headerRef.current.style.height = isSafari ? '90vh' : '100vh';
+        section1Ref.current.style.display = 'block';
+        setTimeout(() => {
+          
+          setIsVisible(true);
+        },50)
+        // tl.fromTo(
+        //   headerRef.current,
+        //   {
+        //     display: 'none',
+        //     height: 0,
+        //   },
+        //   {
+        //     display: 'block',
+        //     height: isSafari ? '90vh' : '100vh',
+        //     duration: DURATION.HEADER,
+        //     ease: EASING.DEFAULT,
+        //   },
+        //   '<',
+        // )
+        //   .to(
+        //     preloaderRef.current,
+        //     {
+        //       display: 'none',
+        //       duration: DURATION.PRELOADER_HIDE,
+        //     },
+        //     '<',
+        //   )
+        //   .fromTo(
+        //     section1Ref.current,
+        //     {
+        //       y: '-50vh',
+        //       display: 'none',
+        //     },
+        //     {
+        //       y: 0,
+        //       display: 'block',
+        //       duration: DURATION.SECTION,
+        //       ease: EASING.SLIDE_IN,
+        //     },
+        //     '-=0.5',
+        //   )
+        //   .to(preloaderRef.current, {
+        //     duration: 0,
+        //     // onComplete: () => setIsVisible(true),
+        //   })
+        //   .to(
+        //     section1Ref.current,
+        //     {
+        //       onComplete: () => setIsVisible(true),
+        //     },
+        //     '+=0.5',
+        //   );
           // setIsVisible(true);
         return () => {
           tl.kill();

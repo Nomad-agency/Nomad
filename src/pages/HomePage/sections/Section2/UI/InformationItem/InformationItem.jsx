@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,6 +7,7 @@ const InformationItem = ({ id = '', title = '', desc = '', className = '', isScr
   gsap.registerPlugin(ScrollTrigger, useGSAP);
   const container = useRef(null);
   const elementRef = useRef(null);
+
 
   useGSAP(
     () => {
@@ -22,6 +23,7 @@ const InformationItem = ({ id = '', title = '', desc = '', className = '', isScr
               start: 'top 100%',
               end: 'top 70%',
               scrub: 4,
+              toggleActions: 'play none none play', // Cấu hình hành vi khi cuộn lên/xuống
             },
           },
         );

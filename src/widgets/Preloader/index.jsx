@@ -27,7 +27,7 @@ export function Preloader({ children, isPreloader }) {
   return (
     <>
       <ComponentPreloader setIsVisible={setIsVisible} isPreloader={isPreloader} />
-      <div className={isVisible ? 'opacity-100' : 'opacity-0'} ref={elementRef}>{children}</div>
+      {isVisible && <div ref={elementRef}>{children}</div>}
     </>
   );
 }
