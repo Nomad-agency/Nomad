@@ -20,7 +20,7 @@ const BurgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 3000); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+      }, 100); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
     }
   };
   return (
