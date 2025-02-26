@@ -3,6 +3,7 @@ import React from 'react'
 import Grid from '@mui/material/Grid2';
 import CaseItem from '../../../../../../HomePage/sections/Section3/components/CaseItem/CaseItem';
 import { Box } from '@mui/material';
+import arrow from "./assets/up_right.svg"
 const SortByCondition = ({ sortCase }) => {
   const casesData = [
     {
@@ -722,7 +723,13 @@ const SortByCondition = ({ sortCase }) => {
     case "Архитектура Nomad.Arch":
       return (
         <>
-          <div className="text-[23px] mb-[50px]">Все проекты разработаны совместно с дизайн-студией <a href="http://nomad-arch.ru" target="_blank" className="font-bold">Nomad.Arch</a></div>
+          <div 
+            className="text-[10px] sm:text-[23px] mb-[20px] sm:mb-[50px] font-[500] flex items-center gap-[4px] sm:gap-[10px] sm:leading-[18px]"
+          >
+            Все проекты разработаны совместно с дизайн-студией 
+            <a href="http://nomad-arch.ru" target="_blank" className="font-bold">Nomad.Arch</a>
+            <img src={arrow} alt="" className='w-[8px] sm:w-[18px] h-auto'/>
+          </div>
           <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
           <Grid container spacing={{ xs: '10px', lg: '15px' }}>
             <Grid size={{ xs: 12, lg: 4 }}>

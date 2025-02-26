@@ -28,7 +28,8 @@ const Sort = ({ sortCase, setSortCase }) => {
           onClick={() => setSortCase(category.name)}
         >
           {category.name}
-          <sup className="ml-0.5 text-[10px] md:text-xs">({category.count})</sup>,
+          <sup className="ml-0.5 text-[10px] md:text-xs">({category.count})</sup>
+          {categories.length - 1 !== categories.indexOf(category) && ','}
         </div>
       ))}
     </div>
