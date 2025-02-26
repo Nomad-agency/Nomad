@@ -176,7 +176,7 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
         headerRef.current.style.height = isSafari ? '90vh' : '100vh';
         section1Ref.current.style.display = 'block';
         setTimeout(() => {
-          
+          setIsRotatingWord(true);
           setIsVisible(true);
         },50)
         // tl.fromTo(

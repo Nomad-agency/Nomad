@@ -19,7 +19,7 @@ export default function Section1({ refData, isRotatingWord }) {
         zIndex: -2,
       }}
     >
-      <div className="text-[2rem] md:text-[5rem] lg:text-[6.3125rem] tracking-tighter sm:tracking-tight" id="about">
+      <div className="text-[2rem] md:text-[5rem] lg:text-[6.3125rem] tracking-tighter sm:tracking-tight relative" id="about">
         <span className="font-lastik text-primary font-[400]">&quot; We have </span>
         <span className="font-[500] whitespace-pre">
           no <RotatingWord words={words} duration={2.5} fade={1} isAnimation={isRotatingWord} />
