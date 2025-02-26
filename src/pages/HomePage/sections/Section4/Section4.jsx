@@ -21,7 +21,7 @@ const Section4 = () => {
       id: 3,
       title: 'спецпроекты',
       list: [
-        <a href="http://nomad-arch.ru" target="_blank" dangerouslySetInnerHTML={{ __html: 'Дизайн-студия Nomad.Arch, выполняющая полную разработку архитектурного пространства в рамках проектов' }}></a>, 
+        <a href="http://nomad-arch.ru" target="_blank" dangerouslySetInnerHTML={{ __html: 'Дизайн-студия <strong>Nomad.Arch</strong>, выполняющая полную разработку архитектурного пространства в рамках проектов' }}></a>, 
         'Digital-проекты', 
         'Мерч'
       ],
