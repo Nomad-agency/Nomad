@@ -16,6 +16,7 @@ export const casesData = [
     title: 'Pop-up «Самолет»',
     link: '/case7',
     cards: ['events', 'архитектура'],
+    nomadarch: true
   },
   {
     background: 'bg-bg-4',

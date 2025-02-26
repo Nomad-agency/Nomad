@@ -169,6 +169,7 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[2].title}
                 link={casesData[2].link}
                 cards={casesData[2].cards}
+                nomadarch={true}
               />
             </Grid>
             <Grid size={{ xs: 12, lg: 8 }}>
@@ -193,6 +194,7 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[7].title}
                 link={casesData[7].link}
                 cards={casesData[7].cards}
+                nomadarch={true}
               />
             </Grid>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -516,6 +518,7 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[2].title}
                 link={casesData[2].link}
                 cards={casesData[2].cards}
+                nomadarch={true}
               />
             </Grid>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -550,6 +553,7 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[7].title}
                 link={casesData[7].link}
                 cards={casesData[7].cards}
+                nomadarch={true}
               />
             </Grid>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -715,9 +719,10 @@ const SortByCondition = ({ sortCase }) => {
           </Box>
         </>
       )
-    case "Архитектура":
+    case "Архитектура Nomad.Arch":
       return (
         <>
+          <div className="text-[23px] mb-[50px]">Все проекты разработаны совместно с дизайн-студией <a href="http://nomad-arch.ru" target="_blank" className="font-bold">Nomad.Arch</a></div>
           <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
           <Grid container spacing={{ xs: '10px', lg: '15px' }}>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -728,6 +733,7 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[7].title}
                 link={casesData[7].link}
                 cards={casesData[7].cards}
+                nomadarch={true}
               />
             </Grid>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -738,6 +744,7 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[2].title}
                 link={casesData[2].link}
                 cards={casesData[2].cards}
+                nomadarch={true}
               />
             </Grid>
           </Grid>

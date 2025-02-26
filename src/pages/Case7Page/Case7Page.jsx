@@ -55,7 +55,7 @@ const Case7Page = () => {
         <HeaderBlack />
 
         {/* Section 1 */}
-        <InfoSection caseData={caseData} />
+        <InfoSection caseData={caseData} nomad={true}/>
 
         <div className="mt-5 md:mt-[50px] mb-[-10px] md:mb-[-30px] text-[0.5rem] md:text-sm font-bold uppercase tracking-tighter whitespace-nowrap">[Renders]</div>
 

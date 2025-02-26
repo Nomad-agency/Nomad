@@ -29,7 +29,8 @@ export default function CaseItem({
                                    title,
                                    link,
                                    cards = [],
-                                   check=false
+                                   check=false,
+                                   nomadarch=false
                                  }) {
   const containerRef = useRef(null);
   const ellipsisRef = useRef(null);
@@ -147,12 +148,20 @@ export default function CaseItem({
         ${check ? 'bg-center md:bg-left-bottom' : 'bg-left-bottom'}
         ${background === 'bg-bg-4' ? '!bg-center' : ''} 
         w-full h-[352px] sm:h-[410px] xl:h-[460px] 
-        rounded-[10px] p-5 relative cursor-pointer block
+        rounded-[10px] p-5 relative cursor-pointer block z-[9]
       `}
     >
       {/* Заголовок кейса и кнопка (поверх фона) */}
-      <div style={cardStyle}>
+      <div style={cardStyle} onClick={(e) => e.stopPropagation()}>
         <CardItem classComponent="absolute" title={title} />
+        { nomadarch && 
+          <a href='http://nomad-arch.ru' target='_blank'
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex justify-center items-center text-center w-[29px] sm:w-[35px] aspect-square absolute top-5 right-[60px] text-[5px] sm:text-[7px] text-white bg-[#393939] rounded-full uppercase z-10"
+          >
+            <a rel="noopener noreferrer" href='http://nomad-arch.ru' target='_blank'>nomad arch</a>
+          </a>
+        }
         <ButtonCase link={link} />
       </div>
       {/* Область для отображения карточек */}

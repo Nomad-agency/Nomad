@@ -72,6 +72,7 @@ export default function GridCaseItem({ casesData }) {
               title={item.title}
               link={item.link}
               cards={item.cards}
+              nomadarch={item.nomadarch}
             />
           </div>
         ))}

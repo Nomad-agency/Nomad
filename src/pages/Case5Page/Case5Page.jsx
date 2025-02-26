@@ -55,7 +55,7 @@ const Case5Page = () => {
         <HeaderBlack />
 
         {/* Section 1 */}
-        <InfoSection caseData={caseData} />
+        <InfoSection caseData={caseData} nomad={true}/>
 
         {/* Section2 */}
         <LongImgVideo image={image1} video={video1}/>

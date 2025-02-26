@@ -14,7 +14,7 @@ const Sort = ({ sortCase, setSortCase }) => {
     { name: 'Production', count: 2 },
     { name: 'SMM/PR', count: 3 },
     { name: 'Партнерство', count: 2 },
-    { name: 'Архитектура', count: 2 },
+    { name: 'Архитектура Nomad.Arch', count: 2 },
   ];
   return (
     <div className="w-[570px] flex flex-wrap gap-[10px] md:gap-[15px] pr-0 md:pr-20 mt-5 md:mt-0">
