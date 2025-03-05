@@ -23,7 +23,7 @@ const Section4 = () => {
       list: [
         <a href="http://nomad-arch.ru" target="_blank" dangerouslySetInnerHTML={{ __html: 'Дизайн-студия <strong>Nomad.Arch</strong>, выполняющая полную разработку архитектурного пространства в рамках проектов' }}></a>, 
         'Digital-проекты', 
-        'Создание капсульных коллекций / Мерч'
+        'Создание капсульных коллекций/Мерч'
       ],
     },
     {
