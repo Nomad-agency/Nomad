@@ -58,7 +58,7 @@ const Case14Page = () => {
         <ImageCustom image={image1} />
 
         {/* Section 3 */}
-        <div className="mt-5 md:mt-[50px] mb-10">
+        <div className="mt-5 md:mt-[20px] mb-10">
           <Type3 type1Data={type1Data} />
         </div>
 

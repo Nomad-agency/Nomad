@@ -38,7 +38,7 @@ const Case4Page = () => {
   const caseData = {
     projectTitle: 'SBER BAZAR',
     clientTitle: '«СБЕР»',
-    cards: ['events', 'брендинг', 'smm/pr'],
+    cards: ['events', 'брендинг'],
     description:
       'Наши друзья из агентства Gutora пригласили нас присоединиться к проекту по запросу Ростовского отделения «СберБанка»: создать особенное событие для застройщиков с фокусом на лидогенерацию.',
     result: [
@@ -112,13 +112,13 @@ const Case4Page = () => {
         />
 
         {/* Section 12 */}
-        <img src={image11} alt="image 11" className="mt-5 md:mt-[50px]" loading="lazy"/>
+        <img src={image11} alt="image 11" className="mt-5 md:mt-[20px]" loading="lazy"/>
 
         {/* Section 13 */}
         <Col2Photo image1={image12} image2={image13} />
 
         {/* Section 14 */}
-        <img src={image14} alt="image 14" className="mt-5 md:mt-[50px]" loading="lazy"/>
+        <img src={image14} alt="image 14" className="mt-5 md:mt-[20px]" loading="lazy"/>
 
         {/* Section 15 */}
         <Col2Photo image1={image15} image2={image16} />
@@ -127,7 +127,7 @@ const Case4Page = () => {
         <Col2Photo image1={image17} image2={image18} />
 
         {/* Section 17 */}
-        <img src={image19} alt="" className="mt-5 md:mt-[50px]" loading="lazy"/>
+        <img src={image19} alt="" className="mt-5 md:mt-[20px]" loading="lazy"/>
 
         {/* Section 18 */}
         <Col2Photo image1={image20} image2={image21} />

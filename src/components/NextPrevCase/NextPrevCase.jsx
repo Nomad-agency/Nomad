@@ -20,7 +20,7 @@ const NextPrevCase = ({ dataPrev, dataNext, link, check=false }) => {
               <CaseItem
                 isFocus2={true}
                 isFocus={true}
-                background={dataPrev.background}
+                background={dataPrev.backgroundNext ?? dataPrev.background}
                 title={dataPrev.title}
                 link={dataPrev.link}
                 cards={dataPrev.cards}
@@ -30,7 +30,7 @@ const NextPrevCase = ({ dataPrev, dataNext, link, check=false }) => {
               <CaseItem
                 isFocus2={true}
                 isFocus={true}
-                background={dataNext.background}
+                background={dataNext.backgroundNext ?? dataNext.background}
                 title={dataNext.title}
                 link={dataNext.link}
                 cards={dataNext.cards}

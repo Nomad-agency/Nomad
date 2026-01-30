@@ -63,7 +63,7 @@ const Case7Page = () => {
         <ImageCustom image={image1} />
 
         {/* Section 3 */}
-        <div className={`flex justify-between mt-5 md:mt-[50px]`}>
+        <div className={`flex justify-between mt-5 md:mt-[20px]`}>
           <video
             src={video1}
             autoPlay
@@ -82,7 +82,7 @@ const Case7Page = () => {
           ></video>
         </div>
 
-        <div className={`flex justify-between mt-5 md:mt-[50px]`}>
+        <div className={`flex justify-between mt-5 md:mt-[20px]`}>
           <video
             src={video3}
             autoPlay
@@ -102,7 +102,7 @@ const Case7Page = () => {
         </div>
 
         {/* Section 4 */}
-        <div className="mt-5 md:mt-[50px]">
+        <div className="mt-5 md:mt-[20px]">
           <Type1 type1Data={type1Data} />
         </div>
 
@@ -114,7 +114,7 @@ const Case7Page = () => {
           title={'Центральной частью пространства и главным eye-catcher\'ом стала инсталляция с «залипательным» контентом. Мы полностью разработали ее архитектуру и наполнение.'}
         />
 
-        <div className="mt-5 md:mt-[50px] mb-[-10px] md:mb-[-30px] text-[0.5rem] md:text-sm font-bold uppercase tracking-tighter whitespace-nowrap text-right">[REAL photos]</div>
+        <div className="mt-5 md:mt-[20px] mb-[-10px] md:mb-[-30px] text-[0.5rem] md:text-sm font-bold uppercase tracking-tighter whitespace-nowrap text-right">[REAL photos]</div>
 
         {/* Section 7 */}
         <ImageCustom image={image10} />

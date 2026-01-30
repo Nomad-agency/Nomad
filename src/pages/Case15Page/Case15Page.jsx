@@ -61,9 +61,10 @@ const Case15Page = () => {
   const caseData = {
     projectTitle: 'Лига Уличного Футбола',
     clientTitle: '«Т-Банк»\n«Лига Ставок»\n«Окко»',
-    cards: ['брендинг', 'ux/ui-дизайн', 'events', 'партнерство', 'smm/pr', 'production'],
+    cards: ['брендинг', 'ux/ui-дизайн', 'events', 'партнерство'],
     description:
-      'Т-Лига Уличного Футбола — уникальный спортивный проект, возрождающий культуру уличного футбола. Это пространство объединило профессиональных и медиафутболистов, предложив оригинальные правила и новые форматы турниров.',
+      'Т-Лига Уличного Футбола — уникальный спортивный проект, возрождающий культуру уличного футбола. Это пространство объединило профессиональных и медиафутболистов, предложив оригинальные правила и новые форматы турниров.',
+    titleAlign: 'items-start', // Кастомное выравнивание для этого кейса
     result: [
       {
         title: '9к',
@@ -107,10 +108,15 @@ const Case15Page = () => {
         <Col2Photo image1={image1} image2={image2} />
 
         {/* Section 5 video */}
-        <video src={video2} autoPlay loop muted playsInline className="mt-5 md:mt-[50px] w-full h-auto"></video>
+        <video src={video2} autoPlay loop muted playsInline className="mt-5 md:mt-[20px] w-full h-auto"></video>
 
         {/* Section 5 */}
-        <Col2Photo image1={image3} image2={image4} />
+        <Col2Photo
+          image1={image3}
+          image2={image4}
+          styleImage1={{ maxWidth: '570px', maxHeight: '450px' }}
+          styleImage2={{ maxWidth: '598px', maxHeight: '450px' }}
+        />
 
         {/* Section 6 */}
         <HalfText 
@@ -118,7 +124,12 @@ const Case15Page = () => {
         />
 
         {/* Section 7 */}
-        <Col2Photo image1={image5} image2={image6} />
+        <Col2Photo
+          image1={image5}
+          image2={image6}
+          styleImage1={{ maxWidth: '570px', maxHeight: '450px' }}
+          styleImage2={{ maxWidth: '598px', maxHeight: '450px' }}
+        />
 
         {/* Section 8 */}
         <ImageVideo image={image7} video={video3} heightCustom='xl:h-[592px]'/>
@@ -144,7 +155,7 @@ const Case15Page = () => {
         <ImageCustom image={image13} />
 
         {/* Section 15 video */}
-        <video src={video4} autoPlay loop muted playsInline className="mt-5 md:mt-[50px] w-full h-auto"></video>
+        <video src={video4} autoPlay loop muted playsInline className="mt-5 md:mt-[20px] w-full h-auto"></video>
 
         {/* Section 16 */}
         <HalfText 
@@ -158,7 +169,7 @@ const Case15Page = () => {
         <Col2Photo image1={image16} image2={image17} />
 
         {/* Section 19 video */}
-        <video src={video5} autoPlay loop muted playsInline className="mt-5 md:mt-[50px] w-full h-auto"></video>
+        <video src={video5} autoPlay loop muted playsInline className="mt-5 md:mt-[20px] w-full h-auto"></video>
 
         {/* Section 20 */}
         <Col2Photo image1={image18} image2={image19} />
@@ -195,7 +206,7 @@ const Case15Page = () => {
         />
 
         {/* Section 31 2 videos*/}
-        <div className={`flex justify-between mt-5 md:mt-[50px]`}>
+        <div className={`flex justify-between mt-5 md:mt-[20px]`}>
           <video
             src={video6}
             autoPlay

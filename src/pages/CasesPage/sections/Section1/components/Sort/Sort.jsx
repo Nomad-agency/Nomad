@@ -3,17 +3,15 @@ import { Link } from 'react-router-dom';
 
 const Sort = ({ sortCase, setSortCase }) => {
   const categories = [
-    { name: 'Все', count: 15 },
-    { name: 'Брендинг', count: 4 },
-    { name: '3D', count: 5 },
+    { name: 'Все', count: 22 },
+    { name: 'Брендинг', count: 8 },
+    { name: '3D', count: 7 },
     { name: 'UX/UI-дизайн', count: 3 },
-    { name: 'Digital', count: 3 },
-    { name: 'Events', count: 7 },
-    { name: 'Стратегия и позиционирование', count: 1 },
-    { name: 'Мерч', count: 2 },
-    { name: 'Production', count: 2 },
-    { name: 'SMM/PR', count: 3 },
-    { name: 'Партнерство', count: 2 },
+    { name: 'Digital', count: 4 },
+    { name: 'Events', count: 11 },
+    { name: 'Стратегия и позиционирование', count: 3 },
+    { name: 'Мерч', count: 3 },
+    { name: 'Партнерство', count: 5 },
     { name: 'Архитектура Nomad.Arch', count: 2 },
   ];
   return (

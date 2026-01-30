@@ -17,6 +17,13 @@ import Case12Page from '../pages/Case12Page/Case12Page';
 import Case13Page from '../pages/Case13Page/Case13Page';
 import Case14Page from '../pages/Case14Page/Case14Page';
 import Case15Page from '../pages/Case15Page/Case15Page';
+import Case16Page from '../pages/Case16Page/Case16Page';
+import Case17Page from '../pages/Case17Page/Case17Page';
+import Case18Page from '../pages/Case18Page/Case18Page';
+import Case19Page from '../pages/Case19Page/Case19Page';
+import Case20Page from '../pages/Case20Page/Case20Page';
+import Case21Page from '../pages/Case21Page/Case21Page';
+import Case22Page from '../pages/Case22Page/Case22Page';
 import PrivayPolicyPage from '../pages/PrivayPolicyPage/PrivayPolicyPage';
 import PersonalDataPage from '../pages/PersonalDataPage/PersonalDataPage';
 import ScrollToTop from '../ScrollToTop';
@@ -42,6 +49,13 @@ const AppRoutes = () => {
           <Route path="/case13" element={<Case13Page />} />
           <Route path="/case14" element={<Case14Page />} />
           <Route path="/case15" element={<Case15Page />} />
+          <Route path="/case16" element={<Case16Page />} />
+          <Route path="/case17" element={<Case17Page />} />
+          <Route path="/case18" element={<Case18Page />} />
+          <Route path="/case19" element={<Case19Page />} />
+          <Route path="/case20" element={<Case20Page />} />
+          <Route path="/case21" element={<Case21Page />} />
+          <Route path="/case22" element={<Case22Page />} />
           <Route path="/privacypolicy" element={<PrivayPolicyPage />} />
           <Route path="/personaldata" element={<PersonalDataPage />} />
         </Routes>

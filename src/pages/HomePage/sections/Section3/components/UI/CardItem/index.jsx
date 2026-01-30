@@ -8,7 +8,7 @@ const CardItem = forwardRef(
     const className = cx(
       { [styles.cart]: true },
       classComponent,
-      'top-5 left-5 inline-flex items-center justify-center bg-[#FFFFFFCC] rounded-[100px] h-[29px] sm:h-[35px] px-[1rem] lg:px-[1.625rem] lg:text-xs font-semibold whitespace-nowrap uppercase'
+      'top-5 left-5 inline-flex items-center justify-center bg-[#FFFFFFCC] rounded-[100px] h-[29px] sm:h-[35px] px-[1rem] lg:px-[10px] lg:text-xs font-semibold whitespace-nowrap uppercase'
     );
 
     return (

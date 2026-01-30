@@ -8,7 +8,7 @@ gsap.registerPlugin(Power2);
  *
  * @constant {number} SCALE
  */
-const SCALE = 1;
+const SCALE = 0.75;
 
 /**
  * Константы длительностей анимаций (в секундах).
@@ -34,10 +34,12 @@ export const DURATION = {
   TEXT_LIST: 0.8 * SCALE,
   PAUSE_BEFORE_LINE: 0.3 * SCALE,
   LINE: 0.3 * SCALE,
+  LINE_HIDE: 0.225 * SCALE, // Среднее между быстрым (0.15) и медленным (0.3) ухода тире
   SHORT: 0.1 * SCALE,
   WORD: 0.3 * SCALE,
   BREAK: 0.2 * SCALE,
-  FINAL_SLIDE: 0.5 * SCALE,
+  FINAL_SLIDE: 0.375 * SCALE, // Среднее между быстрым (0.25) и медленным (0.5) смещения в центр
+  FINAL_SLIDE_TEXT_LIST: 0.8167 * SCALE, // Среднее между быстрым (0.3*SCALE) и медленным (1 сек) смещения textList
   HEADER: 2.5 * SCALE,
   SECTION: 1 * SCALE,
   POST_DELAY: 0.2 * SCALE,

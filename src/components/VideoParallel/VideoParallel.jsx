@@ -1,16 +1,17 @@
 import React from 'react'
 
-const VideoParallel = ({ video1, video2 }) => {
+const VideoParallel = ({ video1, video2, widthVideo1 = "w-[49%]", widthVideo2 = "w-[49%]" }) => {
   return (
     <>
-      <div className="flex justify-between mt-5 md:mt-[50px]">
+      <div className="flex justify-between mt-5 md:mt-[20px]">
         <video
           src={video1}
           autoPlay
           loop
           muted
           playsInline
-          className="w-[49%] h-auto object-cover xl:w-[570px] self-stretch"
+          preload="metadata"
+          className={`${widthVideo1} h-auto object-cover xl:w-[570px] self-stretch`}
         ></video>
         <video
           src={video2}
@@ -18,7 +19,8 @@ const VideoParallel = ({ video1, video2 }) => {
           loop
           muted
           playsInline
-          className="w-[49%] h-auto object-cover xl:w-[597px] self-stretch"
+          preload="metadata"
+          className={`${widthVideo2} h-auto object-cover xl:w-[597px] self-stretch`}
         ></video>
       </div>
     </>

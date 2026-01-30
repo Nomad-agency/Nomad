@@ -18,7 +18,7 @@ const Case12Page = () => {
   const caseData = {
     projectTitle: 'CREATE YOUR REALITY?',
     clientTitle: 'Bodium',
-    cards: ['smm/pr', 'production'],
+    cards: [],
     description:
       'BODIUM — закрытый фитнес-бутик с арт-пространством, созданным вместе с современными художниками. Идея рекламной кампании — показать, как фитнес помогает нам в реальной жизни и отключает нас от повседневности, перенося в совершенно другое пространство, где мы можем мечтать, думать и решать свои ежедневные задачи. ',
     result: [
@@ -50,7 +50,7 @@ const Case12Page = () => {
         <LongImgVideo image={image1} video={video1}/>
 
         {/* Section 3 */}
-        <div className="mt-5 md:mt-[50px]">
+        <div className="mt-5 md:mt-[20px]">
           <Type3 type1Data={type1Data} />
         </div>
 

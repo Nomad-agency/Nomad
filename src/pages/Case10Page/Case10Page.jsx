@@ -144,7 +144,7 @@ const Case10Page = () => {
         {/* Section 24 */}
         <ImageCustom image={image29} />
 
-        <NextPrevCase dataPrev={casesData[5]} dataNext={casesData[1]} link={"/case3"}/>
+        <NextPrevCase dataPrev={casesData[16]} dataNext={casesData[1]} link={"/case3"}/>
 
         <Footer />
       </main>

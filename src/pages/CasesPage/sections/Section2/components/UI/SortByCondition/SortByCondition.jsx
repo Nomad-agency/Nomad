@@ -10,7 +10,7 @@ const SortByCondition = ({ sortCase }) => {
       background: 'bg-bg-1',
       title: 'Лига уличного футбола',
       link: '/case15',
-      cards: ['брендинг', 'UX/UI-дизайн', 'events', 'партнерство', 'SMM/PR', 'production'],
+      cards: ['брендинг', 'UX/UI-дизайн', 'events', 'партнерство'],
     },
     {
       background: 'bg-bg-2',
@@ -88,13 +88,55 @@ const SortByCondition = ({ sortCase }) => {
       background: 'bg-bg-14',
       title: 'SBER BAZAR',
       link: '/case4',
-      cards: ['events', 'брендинг', 'SMM/PR'],
+      cards: ['events', 'брендинг'],
     },
     {
       background: 'bg-bg-15',
       title: 'create your reality?',
       link: '/case12',
-      cards: ['SMM/PR', 'production'],
+      cards: [],
+    },
+    {
+      background: 'bg-bg-16-1',
+      title: 'Хвоя by Pine River',
+      link: '/case16',
+      cards: ['брендинг'],
+    },
+    {
+      background: 'bg-bg-17-1',
+      title: '«Тим Фест»',
+      link: '/case17',
+      cards: ['брендинг', 'партнерство', 'стратегия', 'позиционирование'],
+    },
+    {
+      background: 'bg-bg-16',
+      title: 'САМОЛет SELECT х Lunda Padel',
+      link: '/case18',
+      cards: ['брендинг', '3d', 'партнерство', 'events'],
+    },
+    {
+      background: 'bg-bg-19',
+      title: 'Фонда мельниченко “движфест “',
+      link: '/case19',
+      cards: ['events'],
+    },
+    {
+      background: 'bg-bg-20',
+      title: 'гольф-клуб «Пестово»',
+      link: '/case20',
+      cards: ['стратегия', 'брендинг', 'партнерство', 'events'],
+    },
+    {
+      background: 'bg-bg-21',
+      title: 'МЕРЧ  lunda  Padel',
+      link: '/case21',
+      cards: ['мерч'],
+    },
+    {
+      background: 'bg-bg-22',
+      title: 'BetBoom Медиа бильярд',
+      link: '',
+      cards: ['events', 'Digital'],
     },
   ];
   console.log(sortCase)
@@ -126,6 +168,88 @@ const SortByCondition = ({ sortCase }) => {
               </Grid>
             </Grid>
           </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[17].background}
+                title={casesData[17].title}
+                link={casesData[17].link}
+                cards={casesData[17].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[21].background}
+                title={casesData[21].title}
+                link={casesData[21].link}
+                cards={casesData[21].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[15].background}
+                title={casesData[15].title}
+                link={casesData[15].link}
+                cards={casesData[15].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+            <Grid container spacing={'15px'}>
+              <Grid size={{ xs: 12, lg: 8 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[18].background}
+                  title={casesData[18].title}
+                  link={casesData[18].link}
+                  cards={casesData[18].cards}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 4 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[20].background}
+                  title={casesData[20].title}
+                  link={casesData[20].link}
+                  cards={casesData[20].cards}
+                />
+              </Grid>
+            </Grid>
+          </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[19].background}
+                title={casesData[19].title}
+                link={casesData[19].link}
+                cards={casesData[19].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 8 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[16].background}
+                title={casesData[16].title}
+                link={casesData[16].link}
+                cards={casesData[16].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
         <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
           <Grid container spacing={{ xs: '10px', lg: '15px' }}>
             <Grid size={{ xs: 12, lg: 4 }}>
@@ -331,6 +455,54 @@ const SortByCondition = ({ sortCase }) => {
             </Grid>
           </Grid>
         </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 8 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[16].background}
+                title={casesData[16].title}
+                link={casesData[16].link}
+                cards={casesData[16].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[15].background}
+                title={casesData[15].title}
+                link={casesData[15].link}
+                cards={casesData[15].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[17].background}
+                title={casesData[17].title}
+                link={casesData[17].link}
+                cards={casesData[17].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[19].background}
+                title={casesData[19].title}
+                link={casesData[19].link}
+                cards={casesData[19].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
         </>
       )
     case "3D":
@@ -390,6 +562,30 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[6].title}
                 link={casesData[6].link}
                 cards={casesData[6].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 8 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[16].background}
+                title={casesData[16].title}
+                link={casesData[16].link}
+                cards={casesData[16].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[17].background}
+                title={casesData[17].title}
+                link={casesData[17].link}
+                cards={casesData[17].cards}
               />
             </Grid>
           </Grid>
@@ -476,6 +672,16 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[8].title}
                 link={casesData[8].link}
                 cards={casesData[8].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[21].background}
+                title={casesData[21].title}
+                link={casesData[21].link}
+                cards={casesData[21].cards}
               />
             </Grid>
           </Grid>
@@ -567,6 +773,54 @@ const SortByCondition = ({ sortCase }) => {
                 cards={casesData[13].cards}
               />
             </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[17].background}
+                title={casesData[17].title}
+                link={casesData[17].link}
+                cards={casesData[17].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 8 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[18].background}
+                title={casesData[18].title}
+                link={casesData[18].link}
+                cards={casesData[18].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[19].background}
+                title={casesData[19].title}
+                link={casesData[19].link}
+                cards={casesData[19].cards}
+              />
+            </Grid>
+          </Grid>
+        </Box>
+        <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+          <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[21].background}
+                title={casesData[21].title}
+                link={casesData[21].link}
+                cards={casesData[21].cards}
+              />
+            </Grid>
           </Grid>
         </Box>
         </>
@@ -584,6 +838,26 @@ const SortByCondition = ({ sortCase }) => {
                 title={casesData[5].title}
                 link={casesData[5].link}
                 cards={casesData[5].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[16].background}
+                title={casesData[16].title}
+                link={casesData[16].link}
+                cards={casesData[16].cards}
+              />
+            </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[19].background}
+                title={casesData[19].title}
+                link={casesData[19].link}
+                cards={casesData[19].cards}
               />
             </Grid>
           </Grid>
@@ -615,81 +889,19 @@ const SortByCondition = ({ sortCase }) => {
                 cards={casesData[11].cards}
               />
             </Grid>
+            <Grid size={{ xs: 12, lg: 4 }}>
+              <CaseItem
+                isFocus2={true}
+                isFocus={true}
+                background={casesData[20].background}
+                title={casesData[20].title}
+                link={casesData[20].link}
+                cards={casesData[20].cards}
+              />
+            </Grid>
           </Grid>
         </Box>
-        </>
-      )
-    case "Production":
-      return (
-        <>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={'15px'}>
-              <Grid size={{ xs: 12, lg: 8 }}>
-                <CaseItem
-                  isFocus2={true}
-                  isFocus={true}
-                  background={casesData[0].background}
-                  title={casesData[0].title}
-                  link={casesData[0].link}
-                  cards={casesData[0].cards}
-                />
-              </Grid>
-              <Grid size={{ xs: 12, lg: 4 }}>
-                <CaseItem
-                  isFocus2={true}
-                  isFocus={true}
-                  background={casesData[14].background}
-                  title={casesData[14].title}
-                  link={casesData[14].link}
-                  cards={casesData[14].cards}
-                />
-              </Grid>
-            </Grid>
-          </Box>
-        </>
-      )
-    case "SMM/PR":
-      return (
-        <>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={'15px'}>
-              <Grid size={{ xs: 12, lg: 8 }}>
-                <CaseItem
-                  isFocus2={true}
-                  isFocus={true}
-                  background={casesData[0].background}
-                  title={casesData[0].title}
-                  link={casesData[0].link}
-                  cards={casesData[0].cards}
-                />
-              </Grid>
-              <Grid size={{ xs: 12, lg: 4 }}>
-                <CaseItem
-                  isFocus2={true}
-                  isFocus={true}
-                  background={casesData[13].background}
-                  title={casesData[13].title}
-                  link={casesData[13].link}
-                  cards={casesData[13].cards}
-                />
-              </Grid>
-            </Grid>
-          </Box>
-          <Box sx={{ flexGrow: 1, marginTop: "15px" }}>
-            <Grid container spacing={'15px'}>
-              <Grid size={{ xs: 12, lg: 4 }}>
-                <CaseItem
-                  isFocus2={true}
-                  isFocus={true}
-                  background={casesData[14].background}
-                  title={casesData[14].title}
-                  link={casesData[14].link}
-                  cards={casesData[14].cards}
-                />
-              </Grid>
-            </Grid>
-          </Box>
-        </>
+        </> 
       )
     case "Партнерство":
       return (
@@ -714,6 +926,40 @@ const SortByCondition = ({ sortCase }) => {
                   title={casesData[3].title}
                   link={casesData[3].link}
                   cards={casesData[3].cards}
+                />
+              </Grid>
+            </Grid>
+          </Box>
+          <Box sx={{ flexGrow: 1, marginTop: { xs: '10px', lg: '15px' } }}>
+            <Grid container spacing={{ xs: '10px', lg: '15px' }}>
+              <Grid size={{ xs: 12, lg: 4 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[16].background}
+                  title={casesData[16].title}
+                  link={casesData[16].link}
+                  cards={casesData[16].cards}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 4 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[17].background}
+                  title={casesData[17].title}
+                  link={casesData[17].link}
+                  cards={casesData[17].cards}
+                />
+              </Grid>
+              <Grid size={{ xs: 12, lg: 4 }}>
+                <CaseItem
+                  isFocus2={true}
+                  isFocus={true}
+                  background={casesData[19].background}
+                  title={casesData[19].title}
+                  link={casesData[19].link}
+                  cards={casesData[19].cards}
                 />
               </Grid>
             </Grid>

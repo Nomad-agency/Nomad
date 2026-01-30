@@ -54,7 +54,7 @@ const Case8Page = () => {
         <ImageCustom image={image1} />
 
         {/* Section 3 */}
-        <div className="mt-5 md:mt-[50px]">
+        <div className="mt-5 md:mt-[20px]">
           <Type3 type1Data={type1Data} />
         </div>
 

@@ -6,8 +6,14 @@ import ResultProject from './components/ResultProject/ResultProject';
 
 const InfoSection = ({ caseData, nomad=false }) => {
   return (
-    <section className="mt-[57px] md:mt-[6.25rem]">
-      <TitleSection projectTitle={caseData.projectTitle} clientTitle={caseData.clientTitle} nowrap={caseData.nowrap} />
+    <section className="mt-[57px] md:mt-[6.25rem] mb-[20px] sm:mb-[50px]">
+      <TitleSection 
+        projectTitle={caseData.projectTitle} 
+        clientTitle={caseData.clientTitle} 
+        nowrap={caseData.nowrap}
+        titleWidth={caseData.titleWidth}
+        titleAlign={caseData.titleAlign}
+      />
 
       {/* Cards */}
       <Cards cards={caseData.cards} nomad={nomad}/>

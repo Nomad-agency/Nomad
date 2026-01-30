@@ -16,16 +16,22 @@ const ResultProject = ({ data = [] }) => {
           <div className={`${data.length <= 3 ? 'w-[74%] md:w-[48%]' : 'w-auto'} flex items-start md:justify-normal md:gap-16 gap-7`}>
             {data.map((item, index) => (
               <div className="flex flex-col gap-2 md:gap-5" key={index}>
-                <span className="text-[25px] md:text-[4.0625rem] font-medium leading-[20px] md:leading-[51.5px] whitespace-nowrap">{item.title}</span>
-                <span className="text-[10px] md:text-base font-medium whitespace-pre-line">{item.desc}</span>
+                <span className="text-[25px] md:text-[65px] font-medium leading-[20px] md:leading-[51.5px] whitespace-nowrap">{item.title}</span>
+                <span className="text-[10px] md:text-[16px] font-medium whitespace-pre-line tracking-[-0.04em]">{item.desc}</span>
               </div>
             ))}
           </div>
           :
-          <div className='w-[70%] md:w-[90%]'>
+          <div className='w-[70%] md:w-[85%]'>
             <Swiper
-              slidesPerView={window.innerWidth > 576 ? 5 : 3}
+              slidesPerView={3}
               spaceBetween={30}
+              breakpoints={{
+                576: {
+                  slidesPerView: 5,
+                  spaceBetween: 21, // Уменьшено на 30% для ПК (было 30)
+                },
+              }}
               loop={true} //important for autoplay
               speed={2000} //important for autoplay
               autoplay={{ //important for autoplay
@@ -38,10 +44,12 @@ const ResultProject = ({ data = [] }) => {
             >
               {data.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="flex flex-col gap-2 md:gap-5" >
-                    <span className="text-[25px] md:text-[4.0625rem] font-medium leading-[20px] md:leading-[51.5px] whitespace-nowrap">{item.title}</span>
-                    <span className="text-[10px] md:text-base font-medium whitespace-normal md:whitespace-pre-line">{item.desc}</span>
-                  </div>
+                  <div className="flex justify-center">
+                    <div className="flex flex-col gap-2 md:gap-5" >
+                      <span className="text-[25px] md:text-[65px] font-medium leading-[20px] md:leading-[51.5px] whitespace-nowrap">{item.title}</span>
+                      <span className="text-[10px] md:text-[16px] font-medium whitespace-normal md:whitespace-pre-line tracking-[-0.04em]">{item.desc}</span>
+                    </div>
+                </div>
                 </SwiperSlide>
               ))}
             </Swiper>

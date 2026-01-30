@@ -83,10 +83,10 @@ const Case6Page = () => {
         <Col2Photo image1={image2} image2={image3} />
 
         {/* Section 5 */}
-        <img src={image4} alt="image 4" className="mt-[20px] md:mt-[50px]" loading='lazy'/>
+        <img src={image4} alt="image 4" className="mt-[20px] md:mt-[20px]" loading='lazy'/>
 
         {/* Section 6 */}
-        <div className="mt-5 md:mt-[50px]">
+        <div className="mt-5 md:mt-[20px]">
           <Type1 type1Data={type1Data} />
         </div>
 
@@ -103,7 +103,7 @@ const Case6Page = () => {
         <ImageCustom image={image8} />
 
         {/* Section 10 */}
-        <div className="mt-[50px]">
+        <div className="mt-5 md:mt-[20px]">
           <Type1 type1Data={type1Data1} />
         </div>
 

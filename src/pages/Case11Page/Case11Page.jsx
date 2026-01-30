@@ -63,7 +63,7 @@ const Case11Page = () => {
         <video src={video1} autoPlay loop muted playsInline className="mt-12 w-full h-auto"></video>
 
         {/* Section 3 */}
-        <div className="mt-5 md:mt-[50px]">
+        <div className="mt-5 md:mt-[20px]">
           <Type3 type1Data={type1Data} />
         </div>
 
@@ -76,14 +76,14 @@ const Case11Page = () => {
         </div>
 
         {/* Section 6 */}
-        <video src={video2} autoPlay loop muted playsInline className="mt-5 md:mt-12 w-full h-auto"></video>
+        <video src={video2} autoPlay loop muted playsInline className="mt-5 md:mt-12 mb-5 md:mb-12 w-full h-auto"></video>
 
         {/* Section 7 */}
         <HalfText 
           title={'Для дополнительного продвижения проекта были созданы CGI-ролики для посева в Telegram-каналах, закуплена интеграция в популярные шоу в YouTube.'}
         />
 
-        <div className="flex justify-between mt-5 md:mt-[50px]">
+        <div className="flex justify-between mt-5 md:mt-[20px]">
           <video
             src={video3}
             autoPlay

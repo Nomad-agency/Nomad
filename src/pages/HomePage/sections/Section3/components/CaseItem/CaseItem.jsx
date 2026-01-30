@@ -30,13 +30,15 @@ export default function CaseItem({
                                    link,
                                    cards = [],
                                    check=false,
-                                   nomadarch=false
+                                   nomadarch=false,
+                                   disabled=false
                                  }) {
   const containerRef = useRef(null);
   const ellipsisRef = useRef(null);
   const cardRefs = useRef([]);
   const [isDop, setIsDop] = useState(false);
   const [visibleCount, setVisibleCount] = useState(cards.length);
+  const isDisabled = disabled || !link;
 
   /**
    * Функция для обновления количества видимых карточек.
@@ -52,7 +54,8 @@ export default function CaseItem({
     if (!containerRef.current) return;
 
     const containerWidth = containerRef.current.clientWidth;
-    const ellipsisWidth = ellipsisRef.current ? ellipsisRef.current.offsetWidth : 0;
+    // Используем реальную ширину ellipsis, если доступна, иначе примерную (примерно 30px для иконки + отступы)
+    const ellipsisWidth = ellipsisRef.current ? ellipsisRef.current.offsetWidth : 30;
     const GAP = 2; // Интервал между карточками (подгонка под дизайн)
     let totalWidth = 0;
 
@@ -63,8 +66,8 @@ export default function CaseItem({
         totalWidth += (i > 0 ? GAP : 0) + cardEl.offsetWidth;
       }
     }
-    // Если все карточки умещаются в контейнере, отображаем их все
-    if (totalWidth <= containerWidth) {
+    // Если все карточки умещаются в контейнере с учётом ellipsis, отображаем их все
+    if (totalWidth + ellipsisWidth <= containerWidth) {
       setVisibleCount(cards.length);
       return;
     }
@@ -83,7 +86,8 @@ export default function CaseItem({
         break;
       }
     }
-    setVisibleCount(count);
+    // Минимум должна быть показана хотя бы одна карточка с ellipsis
+    setVisibleCount(Math.max(1, count));
   }, [cards, isFocus2, isDop, isMobile]);
 
   // Обновляем количество видимых карточек с задержкой (учитывая анимацию)
@@ -118,7 +122,8 @@ export default function CaseItem({
       ));
     }
     // Иначе показываем часть карточек и кнопку-ellipsis вместо последней карточки
-    const visibleItems = cards.slice(0, visibleCount - 1).map((item, index) => (
+    // visibleCount всегда >= 1 благодаря Math.max(1, count) в updateVisibleCount
+    const visibleItems = cards.slice(0, Math.max(0, visibleCount - 1)).map((item, index) => (
       <CardItem
         key={index}
         ref={(el) => (cardRefs.current[index] = el)}
@@ -139,16 +144,21 @@ export default function CaseItem({
     return visibleItems;
   };
 
+  const WrapperComponent = isDisabled ? 'div' : Link;
+  const wrapperProps = isDisabled ? {} : { to: link };
+
   return (
-    <Link
-      to={link}
+    <WrapperComponent
+      {...wrapperProps}
       ref={containerRef}
+      aria-disabled={isDisabled}
       className={`
         ${background} bg-cover
         ${check ? 'bg-center md:bg-left-bottom' : 'bg-left-bottom'}
-        ${background === 'bg-bg-4' ? '!bg-center' : ''} 
+        ${background === 'bg-bg-4' || background === 'bg-bg-16' || background === 'bg-bg-17' || background === 'bg-bg-6' ? '!bg-center' : ''} 
         w-full h-[352px] sm:h-[410px] xl:h-[460px] 
-        rounded-[10px] p-5 relative cursor-pointer block z-[9]
+        rounded-[10px] p-5 relative block z-[9]
+        ${isDisabled ? 'cursor-default' : 'cursor-pointer'}
       `}
     >
       {/* Заголовок кейса и кнопка (поверх фона) */}
@@ -162,7 +172,7 @@ export default function CaseItem({
             <a rel="noopener noreferrer" href='http://nomad-arch.ru' target='_blank'>nomad arch</a>
           </a>
         }
-        <ButtonCase link={link} />
+        <ButtonCase link={link} disabled={isDisabled} />
       </div>
       {/* Область для отображения карточек */}
       <div className="absolute bottom-5">
@@ -187,7 +197,7 @@ export default function CaseItem({
           )}
         </div>
       </div>
-    </Link>
+    </WrapperComponent>
   );
 }
 
@@ -199,4 +209,5 @@ CaseItem.propTypes = {
   title: PropTypes.string,
   link: PropTypes.string,
   cards: PropTypes.array,
+  disabled: PropTypes.bool,
 };

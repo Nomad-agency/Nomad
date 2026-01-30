@@ -101,9 +101,9 @@ export function useStartGSAP(setCurrentWord, setIsVisible, words, refData, setIs
         tl.to(lineWord.current, {
           x: -10,
           scaleX: 0,
-          duration: DURATION.LINE,
+          duration: DURATION.LINE_HIDE,
         })
-          .to(textListRef.current, { x: '-68%', duration: 1 }, '<')
+          .to(textListRef.current, { x: '-68%', duration: DURATION.FINAL_SLIDE_TEXT_LIST }, '<')
           .to(textRef.current, { x: '-10%', duration: DURATION.FINAL_SLIDE }, '+=0.3')
           .to(textRef.current, {
             opacity: 0,
