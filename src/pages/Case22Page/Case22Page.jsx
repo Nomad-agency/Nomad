@@ -22,6 +22,7 @@ import video10 from './assets/video_10.mp4';
 import video11 from './assets/video_11.mp4';
 import Col2Photo from '../../components/Col2Photo/Col2Photo';
 import VideoParallel from '../../components/VideoParallel/VideoParallel';
+import VideoParallel3 from '../../components/VideoParallel/VideoParallel3';
 import Footer from '../../components/Footer/Footer';
 import NextPrevCase from '../../components/NextPrevCase/NextPrevCase';
 import { casesData } from '../utils/const';
@@ -117,11 +118,9 @@ const Case22Page = () => {
 
       <Col2Photo image1={image7} image2={image8} />
 
-      <VideoParallel video1={video6} video2={video7} />
+      <VideoParallel3 video1={video6} video2={video7} video3={video8} />
 
-      <VideoParallel video1={video8} video2={video9} />
-
-      <VideoParallel video1={video10} video2={video11} />
+      <VideoParallel3 video1={video9} video2={video10} video3={video11} />
 
 
       {/* Section 14 */}
