@@ -32,7 +32,7 @@ export const casesData = [
   {
     background: 'bg-bg-17',
     title: 'betboom Медиа бильярд',
-    link: '',
+    link: '/case22',
     cards: ['events', 'digital'],
   },
 ];

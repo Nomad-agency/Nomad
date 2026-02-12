@@ -11,7 +11,7 @@ const VideoParallel = ({ video1, video2, widthVideo1 = "w-[49%]", widthVideo2 = 
           muted
           playsInline
           preload="metadata"
-          className={`${widthVideo1} h-auto object-cover xl:w-[570px] self-stretch`}
+          className={`${widthVideo1} h-auto object-cover xl:w-[590px] self-stretch`}
         ></video>
         <video
           src={video2}
@@ -20,7 +20,7 @@ const VideoParallel = ({ video1, video2, widthVideo1 = "w-[49%]", widthVideo2 = 
           muted
           playsInline
           preload="metadata"
-          className={`${widthVideo2} h-auto object-cover xl:w-[597px] self-stretch`}
+          className={`${widthVideo2} h-auto object-cover xl:w-[590px] self-stretch`}
         ></video>
       </div>
     </>
